@@ -1,6 +1,29 @@
-// Modules to control application life and create native browser window
+// Required stuff
 const {app, BrowserWindow} = require('electron')
 const path = require('path')
+
+//   _____ _                 _                             _             _______                       ___ ___  _____ 
+//  / ____(_)               | |        /\                 | |           |__   __|                     / _ \__ \| ____|
+// | (___  _ _ __ ___  _ __ | | ___   /  \   _ __  _ __   | |__  _   _     | |_ __   __ _ _   _ _   _| (_) | ) | |__  
+//  \___ \| | '_ ` _ \| '_ \| |/ _ \ / /\ \ | '_ \| '_ \  | '_ \| | | |    | | '_ \ / _` | | | | | | |> _ < / /|___ \ 
+//  ____) | | | | | | | |_) | |  __// ____ \| |_) | |_) | | |_) | |_| |    | | |_) | (_| | |_| | |_| | (_) / /_ ___) |
+// |_____/|_|_| |_| |_| .__/|_|\___/_/    \_\ .__/| .__/  |_.__/ \__, |    |_| .__/ \__, |\__,_|\__, |\___/____|____/ 
+//                    | |                   | |   | |             __/ |      | |     __/ |       __/ |                
+//                    |_|                   |_|   |_|            |___/       |_|    |___/       |___/           
+//
+// |----------------------------------|
+// | This part is the important part! |
+// | Here is where you set the URL of |
+// | the website you want to load!    |
+// |----------------------------------|
+
+const windowURL = 'https://aylshamkids.co.uk'
+
+// Just replace "https://mywebsite.com" with your website (e.g. https://example.com) to set the website to be loaded and add an icon.png to the folder this code is in to set an icon.
+
+// |------------------------------------------|
+// | DO NOT TOUCH WHAT IS BELOW THIS SENTENCE.|
+// |------------------------------------------|
 
 function createWindow () {
   // Create the browser window.
@@ -12,8 +35,13 @@ function createWindow () {
     }
   })
 
-  // and load the index.html of the app.
-  mainWindow.loadFile('index.html')
+  // icon
+  if (process.platform !== 'darwin') {
+    mainWindow.icon = path.join(__dirname, '/icon.png')
+  }
+
+  // url
+  mainWindow.loadURL(windowURL)
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
@@ -39,5 +67,4 @@ app.on('window-all-closed', function () {
   if (process.platform !== 'darwin') app.quit()
 })
 
-// In this file you can include the rest of your app's specific main process
-// code. You can also put them in separate files and require them here.
+
