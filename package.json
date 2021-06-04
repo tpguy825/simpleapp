@@ -10,6 +10,6 @@
   "author": "tpguy825",
   "license": "gpl-1",
   "devDependencies": {
-    "electron": "^13.0.1"
+    "electron": "^13.1.0"
   }
 }
