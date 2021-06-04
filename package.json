@@ -12,6 +12,11 @@
   "author": "tpguy825",
   "license": "gpl-1",
   "devDependencies": {
-    "electron": "^13.1.0"
+    "electron": "^12.0.9",
+    "electron-packager": "^15.2.0"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "electron-winstaller": "^5.0.0"
   }
 }
