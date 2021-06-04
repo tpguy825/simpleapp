@@ -4,7 +4,9 @@
   "description": "create apps with ease",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "make-release": "electron-packager . SimpleApp --overwrite",
+    "make-installer": "node build.js"
   },
   "repository": "https://github.com/tpguy825/SimpleApp",
   "author": "tpguy825",
