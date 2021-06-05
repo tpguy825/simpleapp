@@ -17,7 +17,7 @@ const path = require('path')
 // | the website you want to load!    |
 // |----------------------------------|
 
-const windowURL = 'https://aylshamkids.co.uk'
+const windowURL = 'https://mywebsite.com'
 
 // Just replace "https://mywebsite.com" with your website (e.g. https://example.com) to set the website to be loaded and add an icon.png to the folder this code is in to set an icon.
 
