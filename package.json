@@ -17,6 +17,6 @@
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0",
-    "electron-winstaller": "^5.0.0"
+    "electron-winstaller": "^4.0.0"
   }
 }
