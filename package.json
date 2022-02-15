@@ -12,7 +12,7 @@
   "author": "tpguy825",
   "license": "gpl-1",
   "devDependencies": {
-    "electron": "^17.0.0",
+    "electron": "^17.0.1",
     "electron-packager": "^15.4.0"
   },
   "dependencies": {
