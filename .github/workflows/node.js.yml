@@ -25,16 +25,8 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Install Wine (1/5)
-      run: sudo dpkg --add-architecture i386
-    - name: Install Wine (2/5)
-      run: wget -qO - https://dl.winehq.org/wine-builds/winehq.key | sudo apt-key add -
-    - name: Install Wine (3/5)
-      run: sudo add-apt-repository ppa:cybermax-dexter/sdl2-backport
-    - name: Install Wine (4/5)
-      run: sudo apt-add-repository "deb https://dl.winehq.org/wine-builds/ubuntu $(lsb_release -cs) main"
-    - name: Install Wine (5/5)
-      run: sudo apt install --install-recommends winehq-stable
+    - name: Install Wine 
+      run: ./install-wine.sh
     - run: npm install
     - run: npm run make-release
     - run: npm run make-installer
