@@ -27,7 +27,9 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: ls
       run: ls
-    - name: Install Wine 
+    - name: Install Wine (1/2)
+      run: chmod +x ./install-wine.sh
+    - name: Install Wine (2/2)
       run: ./install-wine.sh
     - run: npm install
     - run: npm run make-release
