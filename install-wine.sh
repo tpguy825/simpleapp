@@ -19,8 +19,10 @@ sudo apt-get install -y --install-recommends winehq-stable
 sudo apt-get install -y winetricks
 sudo apt-get install -y winbind
 sudo apt-get install -y wine32
+echo "**************** Starting to add lib stuff ****************"
 sudo apt-get install -y libfaudio0:i386
 sudo apt-get install -y libglib2.0-0:i386
 sudo apt-get install -y libgstreamer1.0-0:i386
 sudo apt-get install -y libgstreamer-plugins-base1.0-0:i386
+echo "**************** Starting install of libwine ****************"
 sudo apt-get install -y libwine:i386
