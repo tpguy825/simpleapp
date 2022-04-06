@@ -23,6 +23,7 @@ echo "**************** Starting to add lib stuff ****************"
 sudo apt-get install -y libselinux1:i386
 sudo apt-get install -y libavcodec58:i386
 sudo apt-get install -y libmount1:i386
+sudo apt-get install -y libpcre2-8-0:i386
 sudo apt-get install -y libfaudio0:i386
 sudo apt-get install -y libglib2.0-0:i386
 sudo apt-get install -y libgstreamer1.0-0:i386
